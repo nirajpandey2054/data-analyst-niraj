@@ -3,6 +3,7 @@
 ![image](https://github.com/user-attachments/assets/9d2ea859-162b-45a4-9cec-f8442e19121a)
 
 **Group Project**
+
 Project Title:
 Business License Data Analysis on AWS
 
