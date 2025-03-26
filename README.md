@@ -1,3 +1,5 @@
+<img width="422" alt="image" src="https://github.com/user-attachments/assets/ffd49e68-011a-4cbf-a589-22729e210e21" />
+<img width="422" alt="image" src="https://github.com/user-attachments/assets/4971ab68-43d9-4255-afbb-ba2148747ac4" />
 Project Part 1
 Descriptive Analysis
 Project Description:
