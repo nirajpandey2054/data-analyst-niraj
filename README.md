@@ -1,6 +1,7 @@
 ![image](https://github.com/user-attachments/assets/b5006368-aa91-4dcd-84b0-80bedce6577d)
 
-<img width="422" alt="image" src="https://github.com/user-attachments/assets/ffd49e68-011a-4cbf-a589-22729e210e21" />
+![image](https://github.com/user-attachments/assets/9d2ea859-162b-45a4-9cec-f8442e19121a)
+
 Project Title:
 Business License Data Analysis on AWS
 
