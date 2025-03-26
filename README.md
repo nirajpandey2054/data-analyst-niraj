@@ -2,6 +2,36 @@
 
 ![image](https://github.com/user-attachments/assets/9d2ea859-162b-45a4-9cec-f8442e19121a)
 
+Business License Data Pipeline Using AWS
+ 1. Data Ingestion with S3
+![image](https://github.com/user-attachments/assets/afd62055-0990-47d7-9828-59ae0cd07448)
+
+Raw CSV files containing business license information are stored in Amazon S3 using a structured folder hierarchy. This serves as the entry point for the ETL pipeline and enables scalable, organized data tracking.
+2. Metadata Discovery with AWS Glue Crawler
+![image](https://github.com/user-attachments/assets/1f4b2ed5-8feb-48ca-b78d-425f4f2a88ca)
+Glue Crawlers scan the dataset in S3, extract schema information, and register metadata into AWS Glue Data Catalog. This prepares the data for querying and downstream processing.
+Glue Crawlers scan the dataset in S3, extract schema information, and register metadata into AWS Glue Data Catalog. This prepares the data for querying and downstream processing.
+![image](https://github.com/user-attachments/assets/dae74e54-6db6-4cea-b260-a637cb5b94bf)
+Using AWS Glue DataBrew, the dataset is profiled to detect schema mismatches, null values, and duplicates. This quality check ensures the data is ready for transformation.
+
+4. Data Cleaning with Glue DataBrew Jobs
+5. ![image](https://github.com/user-attachments/assets/2f8b363b-edbe-4372-85d5-38f12f60178e)
+
+Data is cleaned using transformation recipes that handle missing values, correct data types, and standardize fields. The cleaned version is saved back to S3.
+5. Data Cataloging with Glue Data Catalog
+![image](https://github.com/user-attachments/assets/3ece0161-1173-42da-9f8b-9b362379ffc3)
+Transformed and structured data is cataloged for use with Athena or Redshift. This step ensures easy access, schema management, and consistent querying.
+6. Data Summarization with Glue ETL Jobs
+![image](https://github.com/user-attachments/assets/61d89158-433a-4b52-8a7c-3a04f543aa8f)
+WS Glue ETL jobs perform calculations like total permits, dominant business types, and seasonal trends. Summarized data is stored in S3 and ready for dashboards.
+
+7. Data Security with KMS, S3 Versioning & Replication
+8. ![image](https://github.com/user-attachments/assets/7780fa81-8aa0-4621-8f44-16c11dc01bc3)
+Encryption (SSE-KMS), version control, and replication policies protect the dataset. Lifecycle rules automate cost-effective archiving to Glacier.
+9. Monitoring with CloudTrail & CloudWatch
+10.11. ![image](https://github.com/user-attachments/assets/5db11378-62e8-4a08-b76a-039d1320704f)
+CloudTrail tracks user actions while CloudWatch monitors performance metrics. Alerts help detect anomalies and ensure operational transparency.
+
 **Group Project**
 
 Project Title:
